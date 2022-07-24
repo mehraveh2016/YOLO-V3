@@ -1,0 +1,2 @@
+# YOLO-V3
+ Yolo inputs contains two parts : the images and their labels. Before feeding the input to the network we should create the label that can be produced in different formats.
