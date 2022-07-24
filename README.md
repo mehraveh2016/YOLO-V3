@@ -1,10 +1,12 @@
 # YOLO-V3
 Input 
+
 Yolo inputs contains two parts : the images and their labels. Before feeding the input to the network we should create the label that can be produced in different formats. In this project, the labels are txt files which we used “labeling” for creation. Each txt file includes bounding box coordinates (x, y, width and height) and the class number (we assign a number to each class).
 
 When the feature map ready the network passes it to Activation Function which in the case of yolo v3 is ReLu(is a nonlinear function).In this version we have in some convolutions we have batch normalization which is the factor that normalize the output of the layer, it helps the layer to learn independently
 
 Architecture
+
 The YOLO version 3 architecture, like other versions is based on convolutional neural network. This specific object detection algorithm’s backbone is darknet-53 which contains 75 convolutional layers.
 
 In this version, we have 4 kind of different convolutional layers:
@@ -22,3 +24,9 @@ YOLO V3 ‘s kernel size is: 1x1 and 3x3.
 Recovering the output form previous layer and forward it to the next layer is the role of route layer in the network.
 
 The yolo layer is the layer which the network detects the objects inside the images. In yolo version 3, the network detects the objects in 3 scales, for this reason we have 3 yolo layers, first layer is 84th, in this layer, the network separates the small objects , the output is 13x13, second yolo layer in 96th, is the medium size object detection , output is 26x26  and finally the last layer of the network which also id the 3rd yolo layer, layer number 106 which determines the large objects and give an output with the size of 52x52. 
+
+the code structure is : 
+
+![Untitled](https://user-images.githubusercontent.com/17246929/180649428-6a025984-816f-460e-8b6f-fbaa4ec69b4c.jpg)
+
+My project is described in a report, along with the results. Feel free to contact me if you have any questions. 
